@@ -1,7 +1,7 @@
 from sqlalchemy import select
 
-from database import get_session, init_db
-from models import App, RoleAppGrant
+from onboarding.database import get_session, init_db
+from onboarding.models import App, RoleAppGrant
 
 APPS = [
     "slack",
@@ -18,7 +18,7 @@ ROLE_APP_MAPPINGS: dict[str, list[str]] = {
 
 
 def seed_database() -> None:
-    init_db()
+    # init_db()
     session = get_session()
     try:
         apps_by_name: dict[str, App] = {}
