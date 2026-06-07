@@ -105,7 +105,7 @@ flowchart TB
     ACCESS --> DB
     AUDIT --> DB
 
-    MCP[MCP Server<br/>(stdio)]
+    MCP[MCP Server]
 
     MCP --> TOOL1[get_employee_access]
     MCP --> TOOL2[list_failed_events]
