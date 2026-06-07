@@ -169,7 +169,7 @@ uv sync
 OR
 
 ```bash
-uv install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
 ---
