@@ -220,7 +220,7 @@ http://localhost:8000/docs
 
 # Run MCP Server
 
-Start MCP server:
+Start MCP server (Prequisite: Nodejs Should be installed for MCP Inspector)
 
 ```bash
 npx @modelcontextprotocol/inspector uv run python -m mcp_server.server
@@ -230,6 +230,12 @@ OR
 
 ```bash
 uv run mcp dev mcp_server/server.py
+```
+
+OR
+```bash
+uv run python -m mcp_server.server
+npx -y @modelcontextprotocol/inspector
 ```
 
 The MCP server uses stdio transport and is intended to be consumed by MCP Inspector, cursor and other MCP-compatible clients.
