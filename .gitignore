@@ -8,3 +8,17 @@ wheels/
 
 # Virtual environments
 .venv
+
+
+.pytest_cache/
+
+# Database
+data/onboarding.db
+
+# IDE
+.vscode/
+.cursor/
+
+# OS
+.DS_Store
+Thumbs.db
